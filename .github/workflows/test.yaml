@@ -38,12 +38,14 @@ jobs:
       - name: Instalar dependencias
         run: npm install 
 
-    tres:
-      steps:
-        - name: Setup PHP Action
-          uses: shivammathur/setup-php@2.31.1
-          with:
-            php-version: '8.3'
+  tres:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup PHP Action
+        uses: shivammathur/setup-php@2.31.1
+        with:
+          php-version: '8.3'
       
 
 
