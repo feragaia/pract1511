@@ -7,20 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Mensaje
-        run: echo "Hola Mundo" 
-      - name: Touch File   #Crea
-        run: | 
-             touch hola.txt
-             ls -al
-      - name: Set text    #Agrega
-        run: |
-             echo "Hola mundo" >> hola.txt
-             ls -al
-      - name: Read File  #Lee
-        run: | 
-          cat hola.txt
-          ls -al
+      - name: Prueba Actions
+        uses: ./.github/actions/my-action
   dos: 
     runs-on: ubuntu-latest
      

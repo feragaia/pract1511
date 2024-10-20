@@ -1,0 +1,11 @@
+name: "My Action"
+description: "Test my action"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Directorio
+      run: | 
+        ls -al
+        echo "Hola desde el action mio"
