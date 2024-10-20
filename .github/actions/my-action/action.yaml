@@ -6,6 +6,5 @@ runs:
 
   steps:
     - name: Directorio
-      run: | 
-        ls -al
-        echo "Hola desde el action mio"
+      shell: bash
+      run: echo "Hola desde el action mio"
