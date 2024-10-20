@@ -33,7 +33,9 @@ jobs:
 
       - name: Version de Node
         run: node --version
-
+#Instalar dependecias
+      - name: Instalar dependencias
+        run: npm install 
 
 
 
